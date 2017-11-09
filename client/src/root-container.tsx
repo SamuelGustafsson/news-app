@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { TagsFilter } from "./filtertags-component";
-import { NewsItem } from "./news-component";
+import { NewsItem } from "./news/news-component";
 // import { INews } from "./types";
 
 const NewsContainer = styled.div`
