@@ -4,7 +4,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import RootContainer from "./root-container";
 import { Provider } from "react-redux";
 import { store } from "./store";
-import baseStyles from "./styles/index";
+import baseStyles from "./base-styles";
 
 const render = () => {
   baseStyles();
