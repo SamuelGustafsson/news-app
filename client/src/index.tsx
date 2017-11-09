@@ -1,17 +1,17 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import registerServiceWorker from "./registerServiceWorker";
-import RootContainer from "./root-container";
+import RootComponent from "./root/root-component";
 import { Provider } from "react-redux";
 import { store } from "./store";
-import baseStyles from "./styles/index";
+import baseStyles from "./base-styles";
 
 const render = () => {
   baseStyles();
 
   ReactDOM.render(
     <Provider store={store}>
-      <RootContainer />
+      <RootComponent />
     </Provider>,
     document.getElementById("root") as HTMLElement
   );

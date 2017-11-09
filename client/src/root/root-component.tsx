@@ -1,8 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { TagsFilter } from "./filtertags-component";
-import { NewsItem } from "./news-component";
-// import { INews } from "./types";
+import { TagsFilter } from "../filtertags-component";
+import { NewsItem } from "../news/news-component";
 
 const NewsContainer = styled.div`
   display: flex;
@@ -20,7 +19,7 @@ const newsItem = {
 
 const tags: string[] = ["Tag 1", "Tag 2", "Tag 3", "Tag 4"];
 
-const RootContainer = (): React.ReactElement<{}> => (
+const RootComponent = (): React.ReactElement<{}> => (
   <div>
     <TagsFilter tags={tags} />
     <NewsContainer>
@@ -29,4 +28,4 @@ const RootContainer = (): React.ReactElement<{}> => (
   </div>
 );
 
-export default RootContainer;
+export default RootComponent;
