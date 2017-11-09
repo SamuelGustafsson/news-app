@@ -1,0 +1,17 @@
+{
+  "name": "consid-s5-frontend-recruitment-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon index.js",
+    "start": "concurrent \"npm run client\" \"npm run server\""
+  },
+  "author": "Johan Runesson",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.0",
+    "express": "^4.14.0"
+  }
+}
